@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/styles.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-title">
+            <h1>OpenTelemetry New Relic Example App</h1>
+        </div>
+        <div class="wrapper-button">
+            <p>Get Random Number</p>
+            <form action="/randomize" method="get">
+                <button type="submit">SUBMIT!</button>
+            </form>
+        </div>
+    </div>
+    <div class="getwrapper">
+        <h1>RANDOM NUMBERS GENERATED</h1>
+        <p>
+            <object data="./public/data/data.txt"width="600" height="300"></object>
+        </p>
+    </div>
+
+</body>
+
+</html>
