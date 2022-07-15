@@ -26,7 +26,7 @@ Install the dependencies
 
 Start the OTEL collector and mount the configuration file plus the logs location. Please note a New Relic license key is required and should be saved on the host machine as an env variable `NEW_RELIC_LICENSE_KEY`
  
-   `docker run -d -v $(pwd)/src/utils/otel-collector-config.yml:/etc/otelcol-contrib/config.yaml -v $(pwd)/src/logs/app.logs:/etc/otelcol-contrib/app-logs/app.logs -e NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY -p 4318:4318 otel/opentelemetry-collector-contrib:latest`
+   `docker run -d -v $(pwd)/src/utils/otel-collector-config.yml:/etc/otelcol-contrib/config.yaml -v $(pwd)/src/logs/app.logs:/etc/otelcol-contrib/app-logs/app.logs -e NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY -p 4318:4318 otel/opentelemetry-collector-contrib::0.55.0`
 
 Start the app 
   `npm start`
